@@ -17,3 +17,8 @@
   font-family: 'Open Sans Semibold';
   src: url(../fonts/OpenSans-Semibold.ttf);
 }
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
