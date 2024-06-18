@@ -58,23 +58,42 @@ li {
 
 /*Текст стиль для основного текстового блока*/
 .text-h2 {
+  letter-spacing: 0.05em;
   font-size: 30px;
   font-family: var(--bold-font);
+  text-align: center;
   margin-bottom: 25px;
-  color: var(--first-color);
+  /* color: var(--first-color); */
 }
 
 .text-h3 {
+  letter-spacing: 0.05em;
   font-size: 20px;
   font-family: var(--semibold-font);
-  color: var(--first-color);
+  text-align: center;
+  /* color: var(--first-color); */
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .text-p {
+  letter-spacing: 0.05em;
   font-size: 15px;
   font-family: var(--regular-font);
-  color: var(--first-color);
-  line-height: 1.467;
+  text-align: center;
+  /* color: var(--first-color); */
+  line-height: 1.5;
+}
+
+.text-p-wide {
+  max-width: 650px;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  font-family: var(--regular-font);
+  text-align: center;
+  line-height: 1.5;
+
 }
 
 .container {
@@ -83,7 +102,7 @@ li {
 
 /*Меню*/
 .menu-bar {
-  padding: 20px 0;
+  padding: 25px 0 30px;
   background-color: var(--white-color);
 }
 
@@ -105,29 +124,34 @@ li {
   color: var(--gray-color);
 }
 
+i.icon-menu-bar {
+  font-size: 20px;
+}
+
 /*Шапка*/
 .header {
+  /* max-width: 1400px; */
   color: var(--white-color);
   text-align: center;
-  padding: 180px 0;
+  padding: 170px 0 65px;
   background-image: url(../img/header.png);
   background-size: cover;
   background-position: 0 100%;
   /* background-color: rgb(0, 0, 0); */
 }
 
-.col-xl-12 {}
-
 .header__title {
+  letter-spacing: 0.05em;
   font-size: 60px;
   font-family: var(--semibold-font);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .header__text {
+  letter-spacing: 0.05em;
   font-size: 22px;
   font-family: var(--regular-font);
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 .button {
@@ -138,7 +162,7 @@ li {
   text-transform: uppercase;
   font-family: var(--button-bold-font);
   font-size: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 .button_empty {
@@ -155,31 +179,118 @@ li {
 .button_full:hover {
   border: 2px dotted var(--white-color);
   background: var(--accent-color2);
+  cursor: pointer;
 }
 
-.fa-angle-down {
+i.fa-angle-down {
   display: block;
   font-weight: bold;
-  /* font-size: 25px; */
+  font-size: 35px;
   color: var(--white-color);
 }
 
 /*О нас*/
 .about {
-  padding-top: 120px;
-  padding-bottom: 125px;
+  padding-top: 115px;
+  padding-bottom: 100px;
   background-color: var(--white-color);
   text-align: center;
   color: var(--first-color);
 }
 
-.about__title {}
-
 .about__text {
+
+  margin-bottom: 125px;
+}
+
+/*Наши сервисы*/
+.service {
+  background-color: var(--background-color1);
+  color: black;
+  padding-top: 165px;
+  padding-bottom: 135px;
+  text-align: center;
+}
+
+.service__text {
   margin-bottom: 110px;
 }
 
-.about__h3 {
-  margin-top: 30px;
-  margin-bottom: 20px;
+.our_card {
+  padding: 50px 20px 50px;
+  margin-bottom: 30px;
+  background-color: var(--white-color);
+  color: var(--first-color);
+  transition: 0.3s ease;
+}
+
+.our_card:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.our_card:hover .icon {
+  color: var(--white-color);
+}
+
+.our_card:hover .button-service {
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.icon {
+  font-size: 60px;
+  color: black;
+  transition: 0.3s;
+}
+
+.service__p {
+  max-width: 265px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.button-service {
+  font-family: var(--semibold-font);
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background-color: transparent;
+  padding: 14px 18px;
+  transition: 0.3s ease;
+}
+
+.button-service:hover {
+  cursor: pointer;
+}
+
+/*Портфолио*/
+.portfolio {
+  background-color: var(--white-color);
+  padding-top: 120px;
+  padding-bottom: 135px;
+}
+
+
+
+
+
+
+/*Кнопка наверх*/
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  background: #00897b;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #000000;
 }

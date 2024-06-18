@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- <div id="toTop" style="display: block;"><i class="fa fa-angle-up"></i></div> -->
   <header class="menu-bar">
     <div class="container">
       <div class="row">
@@ -22,14 +23,14 @@
         <div class="col-xl-8 ml-auto align-self-center">
           <nav>
             <ul class="menu d-flex justify-content-end">
-              <li class="menu__item"><a href="#"><i class="fa fa-home"></i></a></li>
-              <li class="menu__item"><a href="#">Home</a></li>
-              <li class="menu__item"><a href="#">About</a></li>
-              <li class="menu__item"><a href="#">Servicing</a></li>
-              <li class="menu__item"><a href="#">Portfolio</a></li>
-              <li class="menu__item"><a href="#">Blog</a></li>
-              <li class="menu__item"><a href="#">Contact us</a></li>
-              <li class="menu__item"><i class="fa fa-search" aria-hidden="true"></i></li>
+              <li class="menu__item"><a href="/"><i class="fa fa-home"></i></a></li>
+              <!-- <li class="menu__item"><a href="#">Home</a></li> -->
+              <li class="menu__item"><a href="#about">About</a></li>
+              <li class="menu__item"><a href="#service">Servicing</a></li>
+              <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+              <li class="menu__item"><a href="#blog">Blog</a></li>
+              <li class="menu__item"><a href="#contact">Contact us</a></li>
+              <li class="menu__item"><i class="fa fa-search icon-menu-bar" aria-hidden="true"></i></li>
             </ul>
           </nav>
         </div>
@@ -44,17 +45,18 @@
           <p class="header__text">Very suitable to support all web development projects</p>
           <button class="button button_empty">Our services</button>
           <button class="button button_full">Hire is now</button>
-          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
         </div>
       </div>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xl-6">
+        <div class="col-xl-8">
           <h2 class="about__title text-h2">About Us</h2>
-          <p class="about__text text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          <p class="about__text text-p-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor
             incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
@@ -78,11 +80,91 @@
           <p class="about__p text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi vero
             molestiae et, nisi error!</p>
         </div>
-
       </div>
     </div>
     </div>
   </section>
+  <section class="service" id="service">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h2 class="service__title text-h2">Our services</h2>
+          <p class="service__text text-p-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-md-6">
+          <div class="our_card">
+            <i class="fa fa-search icon" aria-hidden="true"></i>
+            <h3 class="service__h3 text-h3">Research</h3>
+            <p class="service__p text-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum iti atque corrupti quos.</p>
+            <button class="button-service" style="outline: none;">Read more</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="our_card">
+            <i class="fa fa-file-image-o icon" aria-hidden="true"></i>
+            <h3 class="service__h3 text-h3">Portfolio</h3>
+            <p class="service__p text-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum iti atque corrupti quos.</p>
+            <button class="button-service" style="outline: none;">Read more</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="our_card">
+            <i class="fa fa-question icon" aria-hidden="true"></i>
+            <h3 class="service__h3 text-h3">Support</h3>
+            <p class="service__p text-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum iti atque corrupti quos.</p>
+            <button class="button-service" style="outline: none;">Read more</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="our_card">
+            <i class="fa fa-book icon" aria-hidden="true"></i>
+            <h3 class="service__h3 text-h3">Documentation/h3>
+              <p class="service__p text-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
+              <button class="button-service" style="outline: none;">Read more</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="our_card">
+            <i class="fa fa-code icon" aria-hidden="true"></i>
+            <h3 class="service__h3 text-h3">Development</h3>
+            <p class="service__p text-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum iti atque corrupti quos.</p>
+            <button class="button-service" style="outline: none;">Read more</button>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="our_card">
+            <i class="fa fa-pencil icon" aria-hidden="true"></i>
+            <h3 class="service__h3 text-h3">Design</h3>
+            <p class="service__p text-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum iti atque corrupti quos.</p>
+            <button class="button-service" style="outline: none;">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h2 class="portfolio__title text-h2">Latest Works</h2>
+          <p class="portfolio__text text-p-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </div>
   <!-- Скрипты Bootstrap-->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
