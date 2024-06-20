@@ -21,7 +21,6 @@ html {
   box-sizing: border-box;
 }
 
-
 *,
 *::before,
 *::after {
@@ -40,8 +39,10 @@ p {
 }
 
 body {
+  font-family: 'Open Sans';
+  letter-spacing: 0.05em;
   margin: 0;
-  background-color: var(--gray-color);
+  /* background-color: var(--gray-color); */
 }
 
 a {
@@ -98,6 +99,11 @@ li {
 
 .container {
   max-width: 1224px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*Меню*/
@@ -106,9 +112,9 @@ li {
   background-color: var(--white-color);
 }
 
-.row {
+/* .row {
   justify-content: space-between;
-}
+} */
 
 .menu__item {
   margin-left: 37px;
@@ -154,7 +160,12 @@ i.icon-menu-bar {
   margin-bottom: 110px;
 }
 
+.header button {
+  margin-bottom: 90px;
+}
+
 .button {
+  text-align: center;
   padding: 15px 30px;
   margin: 0 10px;
   color: var(--white-color);
@@ -162,10 +173,19 @@ i.icon-menu-bar {
   text-transform: uppercase;
   font-family: var(--button-bold-font);
   font-size: 20px;
-  margin-bottom: 90px;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+
+  cursor: pointer;
 }
 
-.button_empty {
+.button:hover {
+  background: transparent;
+  border: 2px solid var(--white-color);
+
+}
+
+/* .button_empty:hover {
   background: transparent;
   border: 2px solid var(--white-color);
 }
@@ -180,7 +200,7 @@ i.icon-menu-bar {
   border: 2px dotted var(--white-color);
   background: var(--accent-color2);
   cursor: pointer;
-}
+} */
 
 i.fa-angle-down {
   display: block;
@@ -207,8 +227,8 @@ i.fa-angle-down {
 .service {
   background-color: var(--background-color1);
   color: black;
-  padding-top: 165px;
-  padding-bottom: 135px;
+  padding: 165px 0 85px;
+
   text-align: center;
 }
 
@@ -266,18 +286,155 @@ i.fa-angle-down {
 
 /*Портфолио*/
 .portfolio {
-  background-color: var(--white-color);
+  text-align: center;
+  /* background-color: var(--white-color); */
   padding-top: 120px;
   padding-bottom: 135px;
 }
 
+.portfolio__text {
+  margin-bottom: 110px;
+}
+
+.portfolio__button {
+  text-align: center;
+}
+
+.portfolio button:hover,
+.focused {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+}
+
+.portfolio img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.filter {
+  padding: 110px 0 100px;
+}
+
+div[filter]:hover img {
+  filter: brightness(50%);
+  /* position: relative; */
+  transition: 0.3s;
+}
+
+.overlay {
+  display: none;
+  /* position: absolute;*/
+
+}
+
+div[filter]:hover .overlay {
+  display: block;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+
+  z-index: 3;
+  text-align: center;
+}
+
+/*Наши цены*/
+.pricing {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: black;
+  background: var(--background-color2);
+  text-align: center;
+}
+
+.pricing__text {
+  margin-bottom: 125px;
+}
+
+.price {
+  background-color: var(--white-color);
+  letter-spacing: 0.05em;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0px 3px 25px 0px #00000059;
+}
+
+.price__head {
+  font-size: 50px;
+  padding: 45px 0 65px;
+  background-image: url(../img/price-box.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  max-height: 209px;
+  color: var(--white-color);
+}
+
+.price__head p {
+  font-size: 25px;
+
+}
+
+.price__head sup {
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+.price__head sub {
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+.price__body {
+  margin-top: 50px;
+  font-size: 17px;
+  color: var(--first-color);
+}
+
+.price__body ul li {
+  padding: 35px 0 10px;
+  font-size: 17px;
+  max-width: 175px;
+  margin: 0 auto;
+  border-bottom: 1px solid #21212181;
+}
+
+.price__body ul li:first-child {
+  padding-top: 0;
+}
+
+.price__footer {
+  padding: 65px 0;
+}
+
+.price__footer button {
+  min-width: 180px;
+  min-height: 60px;
+  cursor: pointer;
+  color: var(--first-color);
+  border: 2px solid var(--first-color);
+  background-color: transparent;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  transition: 0.3s;
+}
+
+.price__footer button:hover {
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: none;
+}
 
 
 
-
-
+.Rectangle_shadow
 /*Кнопка наверх*/
-#toTop {
+/* #toTop {
   z-index: 999;
   width: 40px;
   height: 40px;
@@ -293,4 +450,4 @@ i.fa-angle-down {
   cursor: pointer;
   display: none;
   color: #000000;
-}
+} */
