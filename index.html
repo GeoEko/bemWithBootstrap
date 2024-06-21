@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="css/style.css">
   <title>Сайт на Bootstrap + BEM</title>
@@ -157,7 +158,7 @@
       </div>
     </div>
   </section>
-  <div class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
@@ -219,12 +220,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <section class="pricing">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <h2 class="pricing__title text-h2">Latest Works</h2>
+          <h2 class="pricing__title text-h2">Pricing Plan</h2>
           <p class="pricing__text text-p-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
@@ -290,9 +291,285 @@
       </div>
     </div>
   </section>
+  <!-- Команда -->
+  <section class="team">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h2 class="team__title text-h2">Our Team Member</h2>
+          <p class="team__text text-p-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="row multiple-items justify-content-center">
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-manager.png" alt="Team Manager">
+          <h4 class="text-h4">John Doe</h4>
+          <p class="team__podpis">General Manager</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-admin.png" alt="Team Admin">
+          <h4 class="text-h4">Ronobir Sing</h4>
+          <p class="team__podpis">Admin</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-director.png" alt="Team Director">
+          <h4 class="text-h4">Alexa Biru</h4>
+          <p class="team__podpis">Office Director</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-director.png" alt="Team Director">
+          <h4 class="text-h4">Alexa Biru</h4>
+          <p class="team__podpis">Office Director</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-director.png" alt="Team Director">
+          <h4 class="text-h4">Alexa Biru</h4>
+          <p class="team__podpis">Office Director</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-admin.png" alt="Team Admin">
+          <h4 class="text-h4">Ronobir Sing</h4>
+          <p class="team__podpis">Admin</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-director.png" alt="Team Director">
+          <h4 class="text-h4">Alexa Biru</h4>
+          <p class="team__podpis">Office Director</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <img class="team__img" src="img/team-manager.png" alt="Team Manager">
+          <h4 class="text-h4">John Doe</h4>
+          <p class="team__podpis">General Manager</p>
+          <div class="team__icons">
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-telegram fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-vk fa-stack-1x fa-inverse"></i>
+              </span></a>
+            <a href=""><span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h2 class="blog__title text-h2">Blog</h2>
+          <p class="blog__text text-p-wide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="row left">
+        <div class="blog-item">
+          <img src="img/blog-domino.png" alt="Domino Seo">
+        </div>
+        <div class="blog-item">
+          <div class="blog__body">
+            <a href="">SEO Quis Vestibulum</a>
+            <div>
+              <span><i class="fa fa-calendar" aria-hidden="true"></i> 14.0702017</span>
+              <span><i class="fa fa-file-o" aria-hidden="true"></i> Development</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias hic sunt porro
+              voluptates atque</p>
+            <details>
+              <summary style="color: red;">...</summary>
+              <p class="text-hidden">
+                ducimus accusantium? Omnis sapiente corporis inventore aliquam qui. Obcaecati laborum incidunt provident
+                aliquam ipsa, voluptas quis ad! Et, qui? Aut velit vel tempore ullam numquam! Ipsum, repellendus neque.
+                Consequatur nulla odit velit impedit sequi ad. Provident!</p>
+            </details>
+
+          </div>
+        </div>
+      </div>
+      <div class="row right">
+        <div class="blog-item">
+          <img src="img/blog-apple-desk.png" alt="Apple Seo">
+        </div>
+        <div class="blog-item">
+          <div class="blog__body">
+            <a href="">SEO Quis Vestibulum</a>
+            <div>
+              <span><i class="fa fa-calendar" aria-hidden="true"></i> 14.0702017</span>
+              <span><i class="fa fa-file-o" aria-hidden="true"></i> Development</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit esse numquam laudantium possimus delectus
+              eos praesentium ut soluta nihil sed reiciendis labore quos error mollitia molestiae hic, odit doloribus
+              aspernatur, maiores ipsa tempora officiis. Tempora a magnam libero impedit laboriosam. Repellat error
+              adipisci enim reiciendis corporis quos, corrupti laudantium cupiditate.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row left">
+        <div class="blog-item">
+          <img src="img/blog-imac-apple.png" alt="Imac Seo">
+        </div>
+        <div class="blog-item">
+          <div class="blog__body">
+            <a href="">SEO Quis Vestibulum</a>
+            <div>
+              <span><i class="fa fa-calendar" aria-hidden="true"></i> 14.0702017</span>
+              <span><i class="fa fa-file-o" aria-hidden="true"></i> Development</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo impedit corrupti quos dolore
+              necessitatibus! Esse quaerat blanditiis nihil nisi nostrum aut? Ut deleniti mollitia odio deserunt culpa
+              minima tempore consequuntur quia autem animi debitis provident, voluptatibus labore quaerat eum tenetur
+              voluptatem dignissimos maiores nobis nam, veniam laboriosam? Dolorum, asperiores!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Скрипты Bootstrap-->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
