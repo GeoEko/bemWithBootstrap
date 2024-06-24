@@ -65,5 +65,45 @@ $('.multiple-items').slick({
   slidesToScroll: 3,
   arrows: false,
   dots: true,
-  dotsClass: 'dots-style'
+  dotsClass: 'dots-style',
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+    }
+  }, {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }]
+});
+//Скрытие-открытие текста для секции блог - Вариант - 2 
+$('.truncate-text').click(function () {
+  $('.truncate-text').toggleClass('opener');
+});
+
+/*Меню*/
+$('ul.menu a[href^="#"').click(function () {
+  var target = $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(target).offset().top
+  }, 500);
+  $('ul.menu a[href^="#"').css({ 'color': '#212121' });
+  $(this).css({ 'color': '#004bee' });
+  return false;
+});
+/* Кнопка наверх */
+$(window).scroll(function () {
+  if ($(this).scrollTop() != 0)
+    $('#toTop').fadeIn();
+  else
+    $('#toTop').fadeOut();
+});
+$('#toTop').click(function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 800);
 });
